@@ -54,8 +54,8 @@ followtarget = instance_find(obj_player, 0);
 
 if instance_exists(followtarget)
     {
-    view_xview = followtarget.x - view_xview*0.5;
-    view_yview = followtarget.y - view_yview*0.5;
+    view_xview = followtarget.x - view_wview*0.5;
+    view_yview = followtarget.y - view_hview*0.5;
     }
 </string>
           </argument>
