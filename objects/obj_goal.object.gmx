@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>///Go to Next Level
 
-room_goto_next();
+//if room_exists(room_next)
+    //{
+    room_goto_next();
+    //}
 </string>
           </argument>
         </arguments>
