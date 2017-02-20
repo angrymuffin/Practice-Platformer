@@ -54,6 +54,7 @@
       <object>objects\obj_four</object>
       <object>objects\obj_five</object>
     </objects>
+    <object>objects\obj_camera</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menus">
