@@ -86,9 +86,9 @@ x += hsp;
 //Vertical Collision
 if (place_meeting(x, y+vsp, obj_wall))
     {
-    if vsp &gt;=5
+    if vsp &gt;=8
         {
-        health -= 10;
+        health -= 1*vsp;
         }
     while(!place_meeting(x, y+sign(vsp), obj_wall))
         {
@@ -122,6 +122,35 @@ y +=vsp;
             <string>///Game Over
 
 room_goto(rm_levelselect);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw Health Score
+
+x1 = 5
+x2 = x1 + 128
+y1 = 5
+y2 = y1 + 32
+draw_healthbar(x1, y1, x2, y2, health, c_black, c_red, c_lime, 0, false, true);
 </string>
           </argument>
         </arguments>
