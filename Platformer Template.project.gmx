@@ -43,6 +43,7 @@
       <object>objects\obj_options</object>
       <object>objects\obj_mainmenu</object>
       <object>objects\obj_retry</object>
+      <object>objects\obj_splashcontroller</object>
     </objects>
     <objects name="levels">
       <object>objects\obj_one</object>
@@ -51,7 +52,6 @@
       <object>objects\obj_four</object>
       <object>objects\obj_five</object>
     </objects>
-    <object>objects\obj_splashcontroller</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menus">

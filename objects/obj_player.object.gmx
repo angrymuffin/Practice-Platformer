@@ -26,11 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
-grav = 0.3;
+grav = 0.009375*sprite_width;
 hsp = 0;
 vsp = 0;
-jumpspeed = 7;
-movespeed = 4;
+jumpspeed = 0.21875*sprite_width;
+movespeed = 0.125*sprite_width;
+
+health = 100;
 </string>
           </argument>
         </arguments>
@@ -84,6 +86,10 @@ x += hsp;
 //Vertical Collision
 if (place_meeting(x, y+vsp, obj_wall))
     {
+    if vsp &gt;=5
+        {
+        health -= 10;
+        }
     while(!place_meeting(x, y+sign(vsp), obj_wall))
         {
         y += sign(vsp);
@@ -91,31 +97,6 @@ if (place_meeting(x, y+vsp, obj_wall))
     vsp = 0;
     }
 y +=vsp;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_goal">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Go to Next Level
-
-room_goto_next();
 </string>
           </argument>
         </arguments>
