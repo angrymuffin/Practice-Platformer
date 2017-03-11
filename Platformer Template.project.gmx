@@ -33,6 +33,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_options</font>
+  </fonts>
   <objects name="objects">
     <objects name="gameplay">
       <object>objects\obj_player</object>
@@ -41,6 +44,7 @@
       <object>objects\obj_enemy</object>
       <object>objects\obj_pause</object>
       <object>objects\obj_gamecontrol</object>
+      <object>objects\obj_game</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_start</object>
@@ -60,7 +64,6 @@
       <object>objects\obj_five</object>
     </objects>
     <object>objects\obj_camera</object>
-    <object>objects\obj_game</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menus">

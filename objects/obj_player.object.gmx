@@ -100,7 +100,18 @@ y +=vsp;
 
 if health &lt;= 0
     {
-    room_restart();
+    lives -= 1;
+    health = 100;
+    if lives &gt; 0
+        {
+        x = xstart;
+        y = ystart;
+        }
+    else
+        {
+        lives = 3;
+        room_goto(rm_menu);
+        }
     }
 </string>
           </argument>
@@ -126,7 +137,18 @@ if health &lt;= 0
             <kind>1</kind>
             <string>///Game Over
 
-room_goto(rm_levelselect);
+lives -= 1;
+health = 100;
+if lives &gt; 0
+    {
+    x = xstart;
+    y = ystart;
+    }
+else
+    {
+    lives = 3;
+    room_goto(rm_menu);
+    }
 </string>
           </argument>
         </arguments>
@@ -151,11 +173,21 @@ room_goto(rm_levelselect);
             <kind>1</kind>
             <string>///Draw Health Score
 
-x1 = 5
-x2 = x1 + 128
-y1 = 5
-y2 = y1 + 20
+x2 = 635;
+x1 = x2 - 128;
+y1 = 5;
+y2 = y1 + 32;
 draw_healthbar(x1, y1, x2, y2, health, c_black, c_red, c_lime, 0, true, true);
+
+//Draw Lives Score
+
+var xGap = obj_player.sprite_width / 2;
+for (i = 0; i &lt; lives; i++;)
+   {
+   draw_sprite(spr_player, -1, xGap, (obj_player.sprite_height / 2) + 5);
+   xGap += obj_player.sprite_width * 1.2;
+   }
+
 </string>
           </argument>
         </arguments>
