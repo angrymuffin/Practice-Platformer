@@ -11,6 +11,7 @@
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_goal</sprite>
       <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_pause</sprite>
     </sprites>
     <sprites name="menu">
       <sprite>sprites\spr_start</sprite>
@@ -37,6 +38,7 @@
       <object>objects\obj_wall</object>
       <object>objects\obj_goal</object>
       <object>objects\obj_enemy</object>
+      <object>objects\obj_pause</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_start</object>
