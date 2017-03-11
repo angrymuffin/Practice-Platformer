@@ -12,6 +12,7 @@
       <sprite>sprites\spr_goal</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_pause</sprite>
+      <sprite>sprites\spr_bar</sprite>
     </sprites>
     <sprites name="menu">
       <sprite>sprites\spr_start</sprite>
@@ -39,6 +40,7 @@
       <object>objects\obj_goal</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_pause</object>
+      <object>objects\obj_gamecontrol</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_start</object>
@@ -58,6 +60,7 @@
       <object>objects\obj_five</object>
     </objects>
     <object>objects\obj_camera</object>
+    <object>objects\obj_game</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menus">
