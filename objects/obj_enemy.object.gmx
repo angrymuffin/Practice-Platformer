@@ -27,12 +27,13 @@
             <kind>1</kind>
             <string>//Initialize Variables
 enemy_level = 1;
-attack_alarm = 1;
+enemy_health = 100 * enemy_level;
 grav = 0.009375*sprite_width;
 hsp = 0;
 vsp = 0;
 movespeed = 0.125*sprite_width/6;
 direction_alarm = 1;
+attack_alarm = 1;
 </string>
           </argument>
         </arguments>
