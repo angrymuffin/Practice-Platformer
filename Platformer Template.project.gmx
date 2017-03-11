@@ -21,6 +21,7 @@
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_mainmenu</sprite>
       <sprite>sprites\spr_retry</sprite>
+      <sprite>sprites\spr_next</sprite>
     </sprites>
     <sprites name="levels">
       <sprite>sprites\spr_one</sprite>
@@ -55,6 +56,7 @@
       <object>objects\obj_retry</object>
       <object>objects\obj_splashcontroller</object>
       <object>objects\obj_resume</object>
+      <object>objects\obj_next</object>
     </objects>
     <objects name="levels">
       <object>objects\obj_one</object>
@@ -70,6 +72,7 @@
       <room>rooms\rm_splash</room>
       <room>rooms\rm_menu</room>
       <room>rooms\rm_options</room>
+      <room>rooms\rm_transition</room>
       <room>rooms\rm_levelselect</room>
       <room>rooms\rm_pause</room>
     </rooms>
