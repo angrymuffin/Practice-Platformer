@@ -60,7 +60,7 @@ key_d = keyboard_check(ord("D"));
 key_a = -keyboard_check(ord("A"));
 key_jump = keyboard_check_pressed(vk_space);
 key_left = keyboard_check_pressed(vk_left);
-key_rifht = keyboard_check_pressed(vk_right);
+key_right = keyboard_check_pressed(vk_right);
 key_up = keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(vk_down);
 
@@ -76,7 +76,7 @@ if (place_meeting(x,y+1, obj_wall))
     vsp = key_jump * -jumpspeed;
     }
     
-if (key_left == 1 &amp;&amp; place_meeting(x - 15, y, obj_enemy))
+if (key_left == 1 &amp;&amp; place_meeting(x - 15, y, obj_enemy) || key_right == 1 &amp;&amp; place_meeting(x + 15, y, obj_enemy) || key_up == 1 &amp;&amp; place_meeting(x, y - 15, obj_enemy) || key_down == 1 &amp;&amp; place_meeting(x, y + 15, obj_enemy))
     {
     obj_enemy.enemy_health -= 20;
     }
