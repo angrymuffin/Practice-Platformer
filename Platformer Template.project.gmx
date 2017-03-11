@@ -46,6 +46,7 @@
       <object>objects\obj_mainmenu</object>
       <object>objects\obj_retry</object>
       <object>objects\obj_splashcontroller</object>
+      <object>objects\obj_resume</object>
     </objects>
     <objects name="levels">
       <object>objects\obj_one</object>
