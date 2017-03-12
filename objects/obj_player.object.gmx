@@ -75,7 +75,8 @@ if (place_meeting(x,y+1, obj_wall))
     {
     vsp = key_jump * -jumpspeed;
     }
-    
+
+//Attack Enemy
 if (key_left == 1 &amp;&amp; place_meeting(x - 15, y, obj_enemy) || key_right == 1 &amp;&amp; place_meeting(x + 15, y, obj_enemy) || key_up == 1 &amp;&amp; place_meeting(x, y - 15, obj_enemy) || key_down == 1 &amp;&amp; place_meeting(x, y + 15, obj_enemy))
     {
     obj_enemy.enemy_health -= 20;

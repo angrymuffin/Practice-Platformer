@@ -34,6 +34,7 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_options</font>
   </fonts>
@@ -72,9 +73,9 @@
       <room>rooms\rm_splash</room>
       <room>rooms\rm_menu</room>
       <room>rooms\rm_options</room>
-      <room>rooms\rm_transition</room>
       <room>rooms\rm_levelselect</room>
       <room>rooms\rm_pause</room>
+      <room>rooms\rm_transition</room>
     </rooms>
     <rooms name="levels">
       <room>rooms\rm_level1</room>
