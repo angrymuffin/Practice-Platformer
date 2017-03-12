@@ -34,7 +34,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_options</font>
   </fonts>
@@ -67,6 +66,7 @@
       <object>objects\obj_five</object>
     </objects>
     <object>objects\obj_camera</object>
+    <object>objects\obj_levelcontrol</object>
   </objects>
   <rooms name="rooms">
     <rooms name="menus">
